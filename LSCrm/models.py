@@ -27,3 +27,4 @@ class CompanyIndustry(models.Model):
     contact = models.ForeignKey(ContactPerson, on_delete=models.CASCADE)
     industryType = models.CharField(max_length=200)
     products_interested_in = models.CharField(max_length=1000, blank=True, null=True)
+    avgerage_industry_spend = models.CharField(max_length=200, blank = True, null = True)
